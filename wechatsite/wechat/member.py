@@ -15,6 +15,7 @@ class Member:
         self.sort_order = sort_order 
         self.spouse_name = spouse_name
 
+
 class DisplayMember(Member):
     def __init__(self,
             member_id, 
