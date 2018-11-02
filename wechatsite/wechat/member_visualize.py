@@ -5,6 +5,9 @@ from . import member_opt as mo
 def format_info(display_member_obj):
     if display_member_obj is None:
         return ""
+    mother_name  = display_member_obj.mother_name
+    if mother_name is None:
+        mother_name = ""
 
     content = "<tr>"+\
                    "<td>"+str(display_member_obj.descent_no)+"世</td>"+\
@@ -13,7 +16,7 @@ def format_info(display_member_obj):
                    "<td>"+str(display_member_obj.sort_order)+"</td>"+\
                    "<td>"+display_member_obj.spouse_name+"</td>" +\
                    "<td>"+display_member_obj.father_name+"</td>"+\
-                   "<td>"+display_member_obj.mother_name+"</td>"
+                   "<td>"+mother_name+"</td>"
     if display_member_obj.descent_no > 14:
         content = content + "<td><a href='http://www.yinmahezhang.com/s_id?mid="+str(display_member_obj.member_id)+"'>"+"查看"+"</a></td>"
     else:

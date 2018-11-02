@@ -26,11 +26,13 @@ def get_member_info(member_id):
         value = ""
     return value
 
+
 def get_sex_name(sex):
     if sex == "1":
         return '男'
     else:
        return '女'
+
 
 def get_display_member(member_id):
     member_info = get_member_info(member_id)
@@ -47,10 +49,10 @@ def get_display_member(member_id):
         father_obj = json.loads(father_info, object_hook=handle)
         if father_obj.sex == "1":
             father_name = father_obj.member_name
-            if mother_name is  None or mother_name == "":
+            if mother_name is None or mother_name == "":
                 mother_name = father_obj.spouse_name
         else:
-            if mother_name is  None or mother_name == "":
+            if mother_name is None or mother_name == "":
                 mother_name = father_obj.member_name
             father_name = father_obj.spouse_name
 
@@ -64,6 +66,7 @@ def get_display_member(member_id):
                              father_name, \
                              mother_name)
     return display_member_obj
+
 
 def get_sons(member_id):
     son_display_member_list = []
