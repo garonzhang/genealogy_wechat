@@ -35,7 +35,7 @@ def get_display_member(member_id):
     if member_info == "":
         return None
         
-    father_name  = ""
+    father_name = ""
     mother_name = ""
 
     member_obj = json.loads(member_info, object_hook=handle)
@@ -52,7 +52,7 @@ def get_display_member(member_id):
 
     display_member_obj = DisplayMember(member_obj.member_id,\
                              member_obj.member_name,\
-		             member_obj.descent_no, \
+                             member_obj.descent_no, \
                              member_obj.father_id, \
                              member_obj.sex, \
                              member_obj.sort_order, \
