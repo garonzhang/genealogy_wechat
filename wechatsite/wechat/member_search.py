@@ -1,6 +1,6 @@
 import string
-from wechat.member import Member
-from wechat.member  import DisplayMember 
+from .member import Member
+from .member import DisplayMember
 from . import member_opt as mo
 from . import construct_tree as ct
 from . import member_visualize as mv
