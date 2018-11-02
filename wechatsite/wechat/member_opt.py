@@ -1,6 +1,6 @@
 import string
-from wechat.member import Member
-from wechat.member import DisplayMember 
+from .member import Member
+from .member import DisplayMember
 import redis
 import json
 from queue import Queue
