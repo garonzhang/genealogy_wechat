@@ -36,9 +36,9 @@ def get_display_member(member_id):
         return None
         
     father_name = ""
-    mother_name = ""
-
     member_obj = json.loads(member_info, object_hook=handle)
+    mother_name = member_obj.mother_name
+
     father_id = member_obj.father_id
     father_info = get_member_info(father_id)
     if father_info != "":
