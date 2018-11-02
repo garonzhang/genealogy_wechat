@@ -1,4 +1,4 @@
-from member import Member
+from .member import Member
 import csv
 import json
 import redis
