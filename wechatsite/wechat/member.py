@@ -29,7 +29,7 @@ class DisplayMember(Member):
             spouse_name, 
             father_name, 
             mother_name):
-        Member.__init__(self,member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name)
+        Member.__init__(self,member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name, mother_name)
         self.father_name = father_name
         self.mother_name = mother_name
 
