@@ -1,1 +1,0 @@
-# genealogy_wechat
