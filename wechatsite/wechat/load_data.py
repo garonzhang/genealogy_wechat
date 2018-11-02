@@ -9,6 +9,7 @@ def get_substrings(s):
     sub_list = [s[i:i + x + 1] for x in range(len(s)) for i in range(len(s) - x)]
     return sub_list
 
+
 if __name__ == "__main__":
     with open('data/tb_members.csv', newline='') as csvfile:
         csvReader = csv.reader(csvfile)
@@ -31,9 +32,13 @@ if __name__ == "__main__":
             if content[13] != "":
                 father_id = int(content[13])
                 sort_order = int(content[14])
+            mother_name = None
+            if content[15] != "":
+                mother_name = content[15]
+
             sex = content[2]
             spouse_name = content[7]
-            member_obj = Member(member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name)
+            member_obj = Member(member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name, mother_name)
             json_info  = json.dumps(member_obj, default = lambda obj:obj.__dict__, sort_keys=True, indent=4, ensure_ascii=False)
 
             r.set("member."+str(member_id), json_info)

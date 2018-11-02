@@ -6,7 +6,8 @@ class Member:
             father_id, 
             sex, 
             sort_order, 
-            spouse_name):
+            spouse_name,
+            mother_name):
         self.member_id = member_id
         self.member_name = member_name
         self.descent_no = descent_no
@@ -14,6 +15,7 @@ class Member:
         self.sex = sex
         self.sort_order = sort_order 
         self.spouse_name = spouse_name
+        self.mother_name = mother_name
 
 
 class DisplayMember(Member):
