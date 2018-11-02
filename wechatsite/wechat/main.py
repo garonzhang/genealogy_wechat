@@ -1,5 +1,5 @@
 import os, os.path
-import member_search 
+from . import member_search
 import cherrypy
 
 class StringGenerator(object):
