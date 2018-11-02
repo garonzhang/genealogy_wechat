@@ -14,7 +14,9 @@ def handle(d):
                   d["father_id"], 
                   d["sex"], 
                   d["sort_order"],
-                  d["spouse_name"]) 
+                  d["spouse_name"],
+                  d["mother_name"],
+                  )
 
 def get_member_info(member_id):
     key = "member." + str(member_id)
