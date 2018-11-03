@@ -9,9 +9,9 @@ def format_info(display_member_obj):
     if mother_name is None:
         mother_name = ""
 
-    career = display_member_obj.career
-    if career is None:
-        career = ""
+    subtype = display_member_obj.subtype
+    if subtype is None:
+        subtype = ""
 
     content = "<tr>"+\
                    "<td>"+str(display_member_obj.descent_no)+"世</td>"+\
@@ -21,7 +21,7 @@ def format_info(display_member_obj):
                    "<td>"+display_member_obj.spouse_name+"</td>" +\
                    "<td>"+display_member_obj.father_name+"</td>"+\
                    "<td>"+mother_name+"</td>" + \
-                   "<td>" + career + "</td>"
+                   "<td>" + subtype + "</td>"
 
     if display_member_obj.descent_no > 14:
         content = content + "<td><a href='http://www.yinmahezhang.com/s_id?mid="+str(display_member_obj.member_id)+"'>"+"查看"+"</a></td>"
@@ -42,7 +42,7 @@ def get_table_content(display_member_list):
                             <td>配偶</td>
                             <td>父亲</td>
                             <td>母亲</td>
-                            <td>功名职业</td>
+                            <td>分支</td>
                             <td>上下世</td>
                         </tr>
                   '''

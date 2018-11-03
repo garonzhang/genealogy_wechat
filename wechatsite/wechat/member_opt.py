@@ -16,7 +16,7 @@ def handle(d):
                   d["sort_order"],
                   d["spouse_name"],
                   d["mother_name"],
-                  d["career"]
+                  d["subtype"]
                   )
 
 def get_member_info(member_id):
@@ -66,7 +66,7 @@ def get_display_member(member_id):
                              member_obj.spouse_name, \
                              father_name, \
                              mother_name,\
-                             member_obj.career)
+                             member_obj.subtype)
     return display_member_obj
 
 

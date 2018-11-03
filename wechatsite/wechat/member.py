@@ -8,7 +8,7 @@ class Member:
             sort_order, 
             spouse_name,
             mother_name,
-            career):
+                 subtype):
         self.member_id = member_id
         self.member_name = member_name
         self.descent_no = descent_no
@@ -17,7 +17,7 @@ class Member:
         self.sort_order = sort_order 
         self.spouse_name = spouse_name
         self.mother_name = mother_name
-        self.career = career
+        self.subtype = subtype
 
 
 
@@ -32,8 +32,8 @@ class DisplayMember(Member):
             spouse_name, 
             father_name, 
             mother_name,
-            career):
-        Member.__init__(self,member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name, mother_name, career)
+            subtype):
+        Member.__init__(self,member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name, mother_name, subtype)
         self.father_name = father_name
         self.mother_name = mother_name
 

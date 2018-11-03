@@ -30,7 +30,7 @@ def member_format(display_member_obj):
                    "配偶名字："+display_member_obj.spouse_name+"\n" +\
                    "父亲："+display_member_obj.father_name+"\n"+\
                    "母亲："+display_member_obj.mother_name+"\n"+ \
-                   "功名职业：" + display_member_obj.career + "\n" + \
+                   "分支：" + display_member_obj.subtype + "\n" + \
                   "<a href='http://www.yinmahezhang.com/s_id?member_id="+str(display_member_obj.member_id)+"'>"+"查看"+"</a>"
     return member_info 
 
