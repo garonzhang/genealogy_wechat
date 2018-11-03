@@ -35,8 +35,8 @@ if __name__ == "__main__":
             mother_name = None
             if content[15] != "":
                 mother_name = content[15]
-            carrer = content[9]
-            if carrer is None:
+            career = content[9]
+            if career is None:
                 career = ""
 
             sex = content[2]
