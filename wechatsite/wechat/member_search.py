@@ -29,8 +29,9 @@ def member_format(display_member_obj):
                    "排行："+str(display_member_obj.sort_order)+"\n"+\
                    "配偶名字："+display_member_obj.spouse_name+"\n" +\
                    "父亲："+display_member_obj.father_name+"\n"+\
-                   "母亲："+display_member_obj.mother_name+"\n"+\
-                   "<a href='http://www.yinmahezhang.com/s_id?member_id="+str(display_member_obj.member_id)+"'>"+"查看"+"</a>"
+                   "母亲："+display_member_obj.mother_name+"\n"+ \
+                   "功名职业：" + display_member_obj.career + "\n" + \
+                  "<a href='http://www.yinmahezhang.com/s_id?member_id="+str(display_member_obj.member_id)+"'>"+"查看"+"</a>"
     return member_info 
 
 def member_list_format(display_member_list):

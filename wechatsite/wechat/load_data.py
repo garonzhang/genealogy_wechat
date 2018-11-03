@@ -35,10 +35,13 @@ if __name__ == "__main__":
             mother_name = None
             if content[15] != "":
                 mother_name = content[15]
+            carrer = content[9]
+            if carrer is None:
+                career = ""
 
             sex = content[2]
             spouse_name = content[7]
-            member_obj = Member(member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name, mother_name)
+            member_obj = Member(member_id, member_name, descent_no, father_id, sex, sort_order, spouse_name, mother_name, career)
             json_info  = json.dumps(member_obj, default = lambda obj:obj.__dict__, sort_keys=True, indent=4, ensure_ascii=False)
 
             r.set("member."+str(member_id), json_info)
