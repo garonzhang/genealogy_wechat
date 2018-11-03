@@ -7,8 +7,8 @@ class Member:
             sex, 
             sort_order, 
             spouse_name,
-            career,
-            mother_name):
+            mother_name,
+            career):
         self.member_id = member_id
         self.member_name = member_name
         self.descent_no = descent_no
